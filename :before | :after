@@ -1,0 +1,10 @@
+.dot:before - permite que você insira e estilize conteúdo antes de qualquer elemento que tenha a classe .dot. Um uso comum desse seletor pode ser para adicionar ícones, marcas, decorações ou qualquer outro elemento visual antes do conteúdo de um elemento, sem alterar o HTML.
+
+.dot:before {
+  content: "• ";
+  color: red;
+}
+
+Neste exemplo, qualquer elemento com a classe .dot terá um ponto vermelho ("•") inserido antes do seu conteúdo. A propriedade content é usada aqui para definir o que será inserido, e outras propriedades de estilo, como color, podem ser usadas para estilizar o pseudo-elemento.
+
+Os pseudo-elementos :before e :after são incrivelmente úteis para adicionar elementos de estilo sem a necessidade de alterar o HTML, mantendo assim a estrutura do documento mais limpa e a separação de preocupações entre o HTML (estrutura) e o CSS (apresentação).
