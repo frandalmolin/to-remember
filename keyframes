@@ -1,0 +1,27 @@
+No CSS, os keyframes são usados na animação de elementos da página web. Eles permitem aos desenvolvedores especificar os estilos em diferentes momentos da animação, criando assim movimentos complexos e transições de estado para os elementos HTML de forma controlada e eficiente.
+
+A regra @keyframes no CSS define os estados iniciais e finais da animação, bem como estados intermediários, permitindo a interpolação de valores de propriedades CSS entre esses pontos. Isso possibilita a criação de animações suaves e dinâmicas diretamente com CSS, sem a necessidade de JavaScript ou outras tecnologias.
+
+@keyframes exemploAnimacao {
+  0% {
+    background-color: blue;
+    left: 0px;
+  }
+  50% {
+    background-color: green;
+    left: 50px;
+  }
+  100% {
+    background-color: red;
+    left: 100px;
+  }
+}
+
+.meuElemento {
+  position: relative;
+  animation: exemploAnimacao 5s infinite;
+}
+
+Neste exemplo, a animação chamada exemploAnimacao é definida para mudar a cor de fundo de um elemento e sua posição horizontal (left) ao longo do tempo. A animação começa com a cor de fundo azul e o elemento no ponto inicial (left: 0px). No meio da animação (50%), a cor de fundo muda para verde e o elemento se move para left: 50px. No final da animação (100%), a cor de fundo é vermelha e o elemento alcança left: 100px. A animação é aplicada ao elemento com a classe .meuElemento e se repete infinitamente a cada 5 segundos (5s infinite).
+
+Os keyframes no CSS são uma ferramenta poderosa para criar animações web ricas e interativas, melhorando a experiência do usuário sem sobrecarregar o site com scripts externos ou bibliotecas pesadas.
